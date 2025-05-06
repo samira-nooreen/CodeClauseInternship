@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-size: 62.5%; */
+}
+
+body {
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #282727;
+}
+
+/**************************/
+/* GENRAL REUSABLE COMPONENTS */
+/**************************/
+.container {
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    /* font-size: 2rem;
+    color: #1d3f50; */
+}
+
+.grid {
+    display: grid;
+    column-gap: 6.4rem;
+    row-gap: 5.6rem;
+}
+
+.grid:not(:last-child) {
+    /* margin-bottom: 9.6rem; */
+}
+
+.grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--center-v {
+    align-items: center;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-teritary {
+    font-weight: 700;
+    color: #333;
+    letter-spacing: -0.5px;
+}
+
+.heading-primary {
+    font-size: 3.2rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+    text-align: center;
+    font-size: 2.9rem;
+    line-height: 1.2;
+    margin: 2rem;
+}
+
+.heading-tertiary {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+}
+
+.subheading {
+    display: block;
+    font-size: 2rem;
+    font-weight: 500;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #1d3f50;
+    text-transform: uppercase;
+    margin: 1.6rem;
+    padding: 2rem;
+    letter-spacing: 0.75px;
+    text-align: center;
+}
+
+.btn:link,
+.btn:visited {
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #e67;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 9px;
+
+}
+
+.btn--form:hover{
+    background-color: #fff;
+    color: #555;
+}
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #cf1f1f;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf1f1f;
+  border-bottom: 1px solid transparent;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.list-item{
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.list-icon{
+    width: 3rem;
+    height: 3rem;
+    color: #e67;
+}
+
+.all-recepies{
+    font-size: 2.2rem;
+}
