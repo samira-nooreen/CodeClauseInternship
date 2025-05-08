@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Music</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  
+
+<!-- Navbar -->
+<div class="navbar">
+  <div class="navbar-left">
+    <div class="menu-icon">☰</div>
+    <div class="logo"><img src="images/bx-headphone.svg" alt="">My Music</div>
+  </div>
+  <div class="search-bar">
+    <input type="text" placeholder="Search Artists, Songs, Albums"/>
+  </div>
+  <div class="navbar-right">
+    <button class="trial-btn">1 Month Trial @ ₹100</button>
+    <button class="plus-btn">Get Music Plus</button>
+    <span>🌐</span>
+    <span>🌙</span>
+    <a href="login.html">Log In</a>
+    <a href="signup.html">Sign Up</a>
+    
+  </div>
+</div>
+
+<!-- Bottom Navigation -->
+<div class="navbar-bottom">
+  <a href="#" class="active">All</a>
+  <a href="#">Trending Songs</a>
+  <a href="#">New Songs</a>
+  <a href="#">Old Songs</a>
+  <a href="#">Moods & Genres</a>
+  <a href="#">Album</a>
+  <a href="#">Top Playlist</a>
+  <a href="#">Top Artist</a>
+  <a href="#">Radio</a>
+  <a href="#">Podcast</a>
+  <a href="#">Charts</a>
+  <a href="#">My Music</a>
+  <a href="#">Reads</a>
+</div>
+
+<!-- Hero Section -->
+<div class="hero-banner">
+  <div class="hero-overlay"></div>
+  <div class="hero-text">
+    <h1>Your Daily Dose of Music</h1>
+    <p>Stream the hottest tracks, discover new artists, and vibe to your favorite genres all day long.</p>
+    <button class="hero-btn">Explore Now</button>
+  </div>
+</div>
+
+<!-- Main Content Grid -->
+<div class="main-grid">
+<!-- Offer Box -->
+<div class="offer-card">
+  <div class="offer-header">WELCOME OFFER</div>
+  <div class="logo"><img src="images/bx-headphone.svg" alt="">My Music</div>
+  <div class="trial-text">Get 1 Month Trial for just <strong>₹100</strong></div>
+
+  <div class="features">
+    <div>Ad-Free<br>Music</div>
+    <div>Download<br>Unlimited Songs</div>
+    <div>HD Quality<br>Music</div>
+  </div>
+
+  <button class="start-btn">Start Trial Now!</button>
+  <div class="auto-renew">Auto-Renews for ₹599/Year after trial period</div>
+
+  <hr style="margin: 25px 0; border-color: rgba(255,255,255,0.3);">
+
+  <div class="plan-comparison">
+    <h4>Compare Plans</h4>
+    <div class="plan-box free">
+      <h5>🎧 Free</h5>
+      <ul>
+        <li>✔ Shuffle play</li>
+        <li>✖ No offline mode</li>
+        <li>✖ Ads included</li>
+        <li>✖ Medium quality</li>
+      </ul>
+    </div>
+
+    <div class="plan-box premium">
+      <h5>💎 Premium</h5>
+      <ul>
+        <li>✔ Ad-free listening</li>
+        <li>✔ Offline download</li>
+        <li>✔ Unlimited skips</li>
+        <li>✔ High-quality audio</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Sidebar Content -->
+  <div class="offer-side-cards">
+    <div class="user-stats-card">
+      <h4>Your 2025 Summary</h4>
+      <p><strong>54</strong> Songs Played</p>
+      <p><strong>12</strong> Hours Listened</p>
+      <p><strong>Top Artist:</strong> Arijit Singh</p>
+    </div>
+
+    <div class="testimonial-card">
+      <p>“Best music app ever! I discovered so many new favorites.”</p>
+      <p><strong><img src="hannah.jpg" alt="">– Zara, Mumbai</strong></p>
+    </div>
+
+    <div class="countdown-box">
+      <h4>Offer ends in:</h4>
+      <div id="countdown">02:15:45</div>
+    </div>
+
+    <div class="genres-card">
+      <h4>Hot Genres</h4>
+      <ul>
+        <li>🎧 Lo-fi</li>
+        <li>🔥 Indie Pop</li>
+        <li>💃 Desi Beats</li>
+        <li>🎸 Acoustic</li>
+      </ul>
+    </div>
+
+    <div class="mini-player-card">
+      <img src="https://timesofindia.indiatimes.com/photo/79033677/size-795900/79033677.jpg" alt="Fav Song" />
+      <div>
+        <strong>Fav This Week:</strong><br>
+        <span>Aabaad Barbaad</span><br>
+        <small>Arijit Singh</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Welcome Section -->
+  <div class="welcome-section">
+    <div class="welcome-header">
+      <div class="avatar">S</div>
+      <div>
+        <p class="subtext">MUSIC TO GET YOU STARTED</p>
+        <h2>Welcome to My Music,</h2>
+      </div>
+    </div>
+
+    <!-- Music List with Images -->
+    <div class="music-columns">
+      <div class="music-column">
+        <ul>
+          <li>
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="Qurban" />
+            <div><strong>Qurban</strong><br><span>Masroor Ali Khan</span></div>
+          </li>
+          <li>
+            <img src="https://i1.sndcdn.com/artworks-5Uod15fNX19wkr1n-Y0i0aw-t500x500.jpg" alt="Jhol" />
+            <div><strong>Jhol</strong><br><span>Maanu & Annural Khalid</span></div>
+          </li>
+          <li>
+            <img src="https://c.saavncdn.com/773/Afsos-Punjabi-2025-20250129053900-500x500.jpg" alt="Afsos" />
+            <div><strong>Afsos</strong><br><span>Anuv Jain & AP Dhillon</span></div>
+          </li>
+          <li>
+            <img
+              src="https://lh3.googleusercontent.com/FL6KpTJ1UpVl6RVm6iLkp4Z_5RKj2GNaZiRDyQrnskekZ_V0uETwRHFXqtYMtNSh7uG6YeKV7Pnoiuhp=w544-h544-l90-rj"
+              alt="Iqtidar" />
+            <div><strong>Leviating</strong><br><span>Dua Lipa</span></div>
+          </li>
+        </ul>
+      </div>
+      <div class="music-column">
+        <ul>
+          <li>
+            <img src="https://i.ytimg.com/vi/lBvbNxiVmZA/maxresdefault.jpg" alt="Do Patti" />
+            <div><strong>Do Patti: Raanjhan</strong><br><span>Ayush Shakya</span></div>
+          </li>
+          <li>
+            <img src="https://i.ytimg.com/vi/BIcncolta4o/maxresdefault.jpg" alt="Raanjhan" />
+            <div><strong>Raanjhan</strong><br><span>Parampara Tandon</span></div>
+          </li>
+          <li>
+            <img
+              src="https://c.saavncdn.com/452/Wafaon-Ke-Badle-From-Mann-Mast-Malang-Urdu-2025-20250217174408-500x500.jpg"
+              alt="Wafaon" />
+            <div><strong>Wafaon Ke Badle</strong><br><span>Khalid Khan</span></div>
+          </li>
+          <li>
+            <img
+              src="https://i.ytimg.com/vi/Z9pYD-anq6Y/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgZSg1MA8=&rs=AOn4CLCXjN9qpc4QFPAK1YvaAAF1BwTB6w"
+              alt="Maand" />
+            <div><strong>Maand</strong><br><span>Bayaan, Hasan Raheem</span></div>
+          </li>
+        </ul>
+      </div>
+      <div class="music-column">
+        <ul>
+          <li>
+            <img src="https://th.bing.com/th/id/OIP.M_lnnMK47P9pUTbJ-Mp4BQHaK-?rs=1&pid=ImgDetMain" alt="Tere Bin" />
+            <div><strong>Tere Bin</strong><br><span>Shani Arshad</span></div>
+          </li>
+          <li>
+            <img src="https://th.bing.com/th/id/OIP.Qawim1nFtYQxM4wtQ3bdlgHaEK?w=316&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Chal Diye" />
+            <div><strong>Chal Diye Tum Kahan</strong><br><span>AUR</span></div>
+          </li>
+          <li>
+            <img src="https://i.ytimg.com/vi/qRTG8uF2ES4/maxresdefault.jpg" alt="Aaja We Mahiya" />
+            <div><strong>Aaja We Mahiya</strong><br><span>Imran Khan</span></div>
+          </li>
+          <li>
+            <img src="https://th.bing.com/th/id/OIP.NPmhVBJZTw0zPPOS6SpbNQHaEK?rs=1&pid=ImgDetMain" alt="Bikhra" />
+            <div><strong>Bikhra</strong><br><span>Abdul Hannan</span></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Playlists -->
+    <div class="playlist-section">
+      <h3>Featured playlists for you</h3>
+      <div class="playlist-carousel">
+        <div class="playlist-card">Maanu & Annural</div>
+        <div class="playlist-card">Hasan Raheem</div>
+        <div class="playlist-card">Do Patti</div>
+        <div class="playlist-card">Animal</div>
+        <div class="playlist-card">Arijit Singh</div>
+        <div class="playlist-card">Anuv Jain</div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Music Player -->
+  <div class="music-player">
+    <img src="" alt="Album Art" class="player-album-art" id="player-album-art" />
+    <div class="player-info">
+      <div class="song-title" id="song-title">Shape of you</div>
+      <div class="song-artist" id="song-artist">Ed Sheeran</div>
+    </div>
+    <div class="player-controls">
+      <button class="player-btn prev" aria-label="Previous"><img src="icons/previous.svg" alt="Previous" /></button>
+      <button class="player-btn play-pause" aria-label="Play/Pause"><img src="icons/play.svg" alt="Play" /></button>
+      <button class="player-btn next" aria-label="Next"><img src="icons/next.svg" alt="Next" /></button>
+    </div>
+    <audio id="music-audio" src="audio/song.mp3"></audio>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
